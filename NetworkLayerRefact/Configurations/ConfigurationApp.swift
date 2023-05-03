@@ -15,15 +15,15 @@ enum EnvironmentApp: String {
 enum ConfigurationApp {
     enum API {
         static var apiURL: String {
-            return "https://tdrdev.rrsoftware.hu"
+            return ""
         }
 
         static var keyCloak: String {
-            return "https://tdrdev.rrsoftware.hu"
+            return ""
         }
 
         static var socketURL: String {
-            return "wss://tdrdev.rrsoftware.hu/ws"
+            return ""
         }
     }
 }

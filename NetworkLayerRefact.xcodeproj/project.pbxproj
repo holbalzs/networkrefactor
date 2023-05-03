@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BEAC79B62A01B0F700257643 /* NetworkLayerRefactTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEAC79B52A01B0F700257643 /* NetworkLayerRefactTests.swift */; };
 		BEF8227029FC1C6B008F18D4 /* NetworkLayerRefactApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEF8226F29FC1C6B008F18D4 /* NetworkLayerRefactApp.swift */; };
 		BEF8227429FC1C6D008F18D4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BEF8227329FC1C6D008F18D4 /* Assets.xcassets */; };
 		BEF8227729FC1C6D008F18D4 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BEF8227629FC1C6D008F18D4 /* Preview Assets.xcassets */; };
@@ -49,7 +50,19 @@
 		BEF822E729FC591A008F18D4 /* UserDetailsResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEF822D629FC5919008F18D4 /* UserDetailsResponse.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		BEAC79B72A01B0F700257643 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BEF8226429FC1C6B008F18D4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BEF8226B29FC1C6B008F18D4;
+			remoteInfo = NetworkLayerRefact;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
+		BEAC79B32A01B0F700257643 /* NetworkLayerRefactTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NetworkLayerRefactTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BEAC79B52A01B0F700257643 /* NetworkLayerRefactTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkLayerRefactTests.swift; sourceTree = "<group>"; };
 		BEF8226C29FC1C6B008F18D4 /* NetworkLayerRefact.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NetworkLayerRefact.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BEF8226F29FC1C6B008F18D4 /* NetworkLayerRefactApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkLayerRefactApp.swift; sourceTree = "<group>"; };
 		BEF8227329FC1C6D008F18D4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -96,6 +109,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		BEAC79B02A01B0F700257643 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		BEF8226929FC1C6B008F18D4 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -106,10 +126,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		BEAC79B42A01B0F700257643 /* NetworkLayerRefactTests */ = {
+			isa = PBXGroup;
+			children = (
+				BEAC79B52A01B0F700257643 /* NetworkLayerRefactTests.swift */,
+			);
+			path = NetworkLayerRefactTests;
+			sourceTree = "<group>";
+		};
 		BEF8226329FC1C6B008F18D4 = {
 			isa = PBXGroup;
 			children = (
 				BEF8226E29FC1C6B008F18D4 /* NetworkLayerRefact */,
+				BEAC79B42A01B0F700257643 /* NetworkLayerRefactTests */,
 				BEF8226D29FC1C6B008F18D4 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -118,6 +147,7 @@
 			isa = PBXGroup;
 			children = (
 				BEF8226C29FC1C6B008F18D4 /* NetworkLayerRefact.app */,
+				BEAC79B32A01B0F700257643 /* NetworkLayerRefactTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -278,6 +308,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		BEAC79B22A01B0F700257643 /* NetworkLayerRefactTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BEAC79BB2A01B0F700257643 /* Build configuration list for PBXNativeTarget "NetworkLayerRefactTests" */;
+			buildPhases = (
+				BEAC79AF2A01B0F700257643 /* Sources */,
+				BEAC79B02A01B0F700257643 /* Frameworks */,
+				BEAC79B12A01B0F700257643 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BEAC79B82A01B0F700257643 /* PBXTargetDependency */,
+			);
+			name = NetworkLayerRefactTests;
+			productName = NetworkLayerRefactTests;
+			productReference = BEAC79B32A01B0F700257643 /* NetworkLayerRefactTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		BEF8226B29FC1C6B008F18D4 /* NetworkLayerRefact */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = BEF8227A29FC1C6D008F18D4 /* Build configuration list for PBXNativeTarget "NetworkLayerRefact" */;
@@ -305,6 +353,10 @@
 				LastSwiftUpdateCheck = 1430;
 				LastUpgradeCheck = 1430;
 				TargetAttributes = {
+					BEAC79B22A01B0F700257643 = {
+						CreatedOnToolsVersion = 14.3;
+						TestTargetID = BEF8226B29FC1C6B008F18D4;
+					};
 					BEF8226B29FC1C6B008F18D4 = {
 						CreatedOnToolsVersion = 14.3;
 					};
@@ -324,11 +376,19 @@
 			projectRoot = "";
 			targets = (
 				BEF8226B29FC1C6B008F18D4 /* NetworkLayerRefact */,
+				BEAC79B22A01B0F700257643 /* NetworkLayerRefactTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		BEAC79B12A01B0F700257643 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		BEF8226A29FC1C6B008F18D4 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -341,6 +401,14 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		BEAC79AF2A01B0F700257643 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BEAC79B62A01B0F700257643 /* NetworkLayerRefactTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		BEF8226829FC1C6B008F18D4 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -388,7 +456,51 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		BEAC79B82A01B0F700257643 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BEF8226B29FC1C6B008F18D4 /* NetworkLayerRefact */;
+			targetProxy = BEAC79B72A01B0F700257643 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin XCBuildConfiguration section */
+		BEAC79B92A01B0F700257643 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = J2489GK9WT;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.blahol.NetworkLayerRefactTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NetworkLayerRefact.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/NetworkLayerRefact";
+			};
+			name = Debug;
+		};
+		BEAC79BA2A01B0F700257643 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = J2489GK9WT;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.blahol.NetworkLayerRefactTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NetworkLayerRefact.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/NetworkLayerRefact";
+			};
+			name = Release;
+		};
 		BEF8227829FC1C6D008F18D4 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -566,6 +678,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		BEAC79BB2A01B0F700257643 /* Build configuration list for PBXNativeTarget "NetworkLayerRefactTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BEAC79B92A01B0F700257643 /* Debug */,
+				BEAC79BA2A01B0F700257643 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		BEF8226729FC1C6B008F18D4 /* Build configuration list for PBXProject "NetworkLayerRefact" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

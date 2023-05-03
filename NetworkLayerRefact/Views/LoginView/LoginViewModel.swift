@@ -18,10 +18,10 @@ final class LoginViewModel: ObservableObject {
     
     func startLoginFlow() -> URL {
         let baseURLString = ConfigurationApp.API.keyCloak
-        let path = "/auth/realms/tuudr/protocol/openid-connect/auth"
+        let path = ""
         let responseType = "code"
-        let clientId = "tuudr-frontend"
-        let redirectURI = "tuudr://home"
+        let clientId = ""
+        let redirectURI = ""
 
         var components = URLComponents(string: baseURLString)
         components?.path = path
@@ -31,7 +31,7 @@ final class LoginViewModel: ObservableObject {
         components?.queryItems?.append(URLQueryItem(name: "redirect_uri", value: redirectURI))
 
         guard let url = components?.url else {
-            return URL(string: "https://tuudr.com")!
+            return URL(string: "")!
         }
         return url
     }
@@ -60,7 +60,7 @@ final class LoginViewModel: ObservableObject {
         let code = code,
         let state = sessionState,
         let exchangeUrl = URL(
-            string: "\(ConfigurationApp.API.keyCloak)/auth/realms/tuudr/protocol/openid-connect/token"
+            string: ""
         ) else {
             return
         }
@@ -90,7 +90,7 @@ final class LoginViewModel: ObservableObject {
     }
     
     func exchangeFromAppSignIn(params: MinimalJWTpost) {
-        guard let url = URL(string: "\(ConfigurationApp.API.apiURL)/api/v1/auth/apple/exchange-id-token") else { return }
+        guard let url = URL(string: "") else { return }
         
         var urlRequest = URLRequest(url: url)
         urlRequest.httpMethod = "POST"
